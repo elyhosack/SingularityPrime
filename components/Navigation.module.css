@@ -1,0 +1,74 @@
+.nav {
+  display: flex;
+  margin: 0;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px 30px;
+  z-index: 10;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+/* Navigation menu */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+/* Navigation menu item */
+.item {
+  padding: 10px;
+  width:max-content;
+  border-radius: 2px;
+  background-color: none;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.125s ease-in-out;
+}
+
+/* Navigation menu item hover with animation */
+.item:hover {
+    background-color: #ddd;
+    color: #000;
+    transition: all 0.125s ease-in-out;
+}
+
+.item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#dropdown {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    background-color: #e6e6e6;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.329);
+    padding: 10px;
+    z-index: 10;
+    display: none;
+}
+
+
+
+.item #trigger:hover ~ #dropdown {
+    display: block;
+
+
+}

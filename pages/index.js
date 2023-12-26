@@ -1,8 +1,9 @@
 import Head from "next/head";
+import Navigation from "@components/Navigation";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
+
 import FeedbackForm from "@components/FeedbackForm";
-import JokeBlock from "@components/JokeBlock";
 
 export default function Home() {
   return (
@@ -11,7 +12,8 @@ export default function Home() {
         <title>Next.js Toolbox</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      
+      <Navigation />
       <main>
         <Header title="Next.js Toolbox" />
         <hr />
@@ -20,7 +22,6 @@ export default function Home() {
           submissions can be found in the Netlify Admin site.
         </p>
         <FeedbackForm />
-        <JokeBlock />
       </main>
       <Footer />
     </div>
